@@ -3,9 +3,10 @@ class Trie:
         self.root = TrieNode()
 
     def add_string(self, word: str) -> None:
+        nxt = self.root
         for i in word:
             nxt = nxt.add_char(i)
-            nxt.counter -= 1
+            nxt.freq += 1
         nxt.end_of_key = True
 
     def search_string(self, string: str) -> bool:

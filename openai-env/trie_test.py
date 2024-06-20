@@ -1,4 +1,6 @@
-tire = Trie()
+from Trie import Trie
+
+trie = Trie()
 
 words = ["AMBER", "ALICE", "AMPLE", "BALLOON", "BALL", "BLAST", "BAND", "DENSE", "DUTCH", "DECK", "DANCE", "DRAMA", "MESS", "MAVERICK", "MAVEN", "PHYSICS", "PHONE", "PHANTOM", "PASS", "PEAK", "PACK", "ZEST", "ZEAL", "ZAP", "ZIP", "ZIPPER"]
 
@@ -15,4 +17,3 @@ prefix = ["A", "AM", "B", "BALL", "BA", "C", "CA", "DUTCH", "DECK", "GA", "J", "
 
 for p in prefix:
   print(f"frequency of prefix \"{p}\" is {trie.count_prefix(p)}")
-  
