@@ -1,0 +1,4 @@
+- Use human experts to engineer prompts and audit responses for potential errors and biases
+- Make a backup of important data before running AI-generated update queries
+- Ensure that private and sensitive information is anonymized or excluded from the data used by the model
+- Make sure to follow any relevant corporate rules or policies for sharing code and data with third parties
