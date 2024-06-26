@@ -1,3 +1,5 @@
+# article link: https://medium.com/@heshanhfernando/pii-masking-with-python-using-ai4privacy-12279bf7312a
+
 from typing import List, Optional
 from transformers import pipeline, Pipeline
 
@@ -86,7 +88,7 @@ anonymizer_model = load_model("Isotonic/distilbert_finetuned_ai4privacy_v2")
 # Step 2: Check if the model is loaded successfully
 if anonymizer_model:
     # Step 3: Mask PII in a sample sentence using `mask_pii`
-    masked_text = mask_pii("My name is Sarah Jessica Parker but you can call me Jessica", anonymizer_model)
+    masked_text = mask_pii("My name is Sarah Jessica Parker but you can call me Jessica, my phone number is +3809812312312", anonymizer_model)
     
     # Step 4: Print the masked text
     print(masked_text)
